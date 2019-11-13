@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/soundPoolTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mediaPlayerTv"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="soundPool"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:onClick="goToSoundPoolActivity"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/mediaPlayerTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/soundPoolTv"
+        app:layout_constraintBaseline_toBaselineOf="@id/soundPoolTv"
+        android:background="@color/colorPrimary"
+        android:text="mediaPlayer"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:onClick="goToMediaPlayerActivity"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>
